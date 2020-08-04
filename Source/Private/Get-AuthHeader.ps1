@@ -1,3 +1,12 @@
+<#
+.SYNOPSIS
+    Builds authorization header
+.DESCRIPTION
+    Builds and authorization header containing the stored MSAL access token which is passed within the "Header" section for Invoke-RestMethod calls
+.EXAMPLE
+    Get-AuthHeader
+    Returns authorization header
+#>
 function Get-AuthHeader {
     [CmdletBinding()]
     param (

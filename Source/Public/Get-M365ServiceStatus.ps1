@@ -1,3 +1,15 @@
+<#
+.SYNOPSIS
+    Retrieves Microsoft 365 Service Status
+.DESCRIPTION
+    Retrieves service status from the Office 365 Service Communications API
+.EXAMPLE
+    Get-M365ServiceStatus 
+    Lists all available services within the tenant including status information
+.EXAMPLE
+    Get-M365ServiceStatus -Brief
+    Lists all available services within the tenant including most important status information
+#>
 function Get-M365ServiceStatus {
     [CmdletBinding()]
     param (
